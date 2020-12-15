@@ -17,15 +17,11 @@ import csv
 from pathlib import PurePath
 
 ROOTPATH_TESTING = PurePath("GTSRB", "testing", "images")
+ROOTPATH_META = PurePath("GTSRB", "META")
 ROOTPATH_TRAINING = PurePath("GTSRB", "training", "images")
-# function for reading the images
-# arguments: path to the traffic sign data, for example './GTSRB/Training'
-# returns: list of images, list of corresponding labels 
-def readTrainingTrafficSigns(rootpath):
-    '''Reads traffic sign data for German Traffic Sign Recognition Benchmark.
 
-    Arguments: path to the traffic sign data, for example './GTSRB/Training'
-    Returns:   list of images, list of corresponding labels'''
+def readTrainingTrafficSigns(rootpath):
+
     images = [] # images
     labels = [] # corresponding labels
     # loop over all 42 classes
@@ -36,9 +32,51 @@ def readTrainingTrafficSigns(rootpath):
         next(gtReader) # skip header
         # loop over all images in current annotations file
         for row in gtReader:
-            images.append(plt.imread(str(PurePath(prefix, row[0])))) # the 1th column is the filename
-            labels.append(row[7]) # the 8th column is the label
+            image = plt.imread(str(PurePath(rootpath, row[0]))) # the 1th column is the filename
+            image_width = row[1]
+            image_height = row[2]
+            image_roi_x1 = row[3]
+            image_roi_y1 = row[4]
+            image_roi_x2 = row[5]
+            image_roi_y2 = row[6]
+            image_label = row[7]
+            images.append(image) # the 1th column is the filename
+            labels.append(image_label) # the 8th column is the label
         gtFile.close()
     return images, labels
 
-trainImages, trainLabels = readTrainingTrafficSigns(ROOTPATH_TRAINING)
+
+
+def readTestingTrafficSigns(rootpath):
+    images = [] # images
+    
+    gtFile = open(PurePath(rootpath, f"GT-final_test.test.csv")) # annotations file
+    gtReader = csv.reader(gtFile, delimiter=';') # csv parser for annotations file
+    next(gtReader) # skip header
+    
+    for row in gtReader:
+        image = plt.imread(str(PurePath(rootpath, row[0]))) # the 1th column is the filename
+        image_width = row[1]
+        image_height = row[2]
+        image_roi_x1 = row[3]
+        image_roi_y1 = row[4]
+        image_roi_x2 = row[5]
+        image_roi_y2 = row[6]
+        images.append(image) # the 1th column is the filename
+    gtFile.close()
+    return images
+
+def readMetaTrafficSigns(rootpath):
+    
+    images = [] # images
+    
+    for c in range(0,43):
+        image = plt.imread(str(PurePath(rootpath, f"{c}.png"))) # the 1th column is the filename
+        plt.imshow(image)
+        plt.show()
+        images.append(image) # the 1th column is the filename
+    return images
+
+# trainImages, trainLabels = readTrainingTrafficSigns(ROOTPATH_TRAINING)
+# testImages = readTestingTrafficSigns(ROOTPATH_TESTING)
+metaImages = readMetaTrafficSigns(ROOTPATH_META)
