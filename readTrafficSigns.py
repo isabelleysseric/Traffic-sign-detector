@@ -41,4 +41,4 @@ def readTrainingTrafficSigns(rootpath):
         gtFile.close()
     return images, labels
 
-readTrainingTrafficSigns(ROOTPATH_TRAINING)
+trainImages, trainLabels = readTrainingTrafficSigns(ROOTPATH_TRAINING)
