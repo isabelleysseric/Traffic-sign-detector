@@ -1,5 +1,4 @@
 # Traffic-sign-detector
-Building image search an engine using MATLAB.
 <br/>
 <br/>
 
