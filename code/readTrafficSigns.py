@@ -16,9 +16,9 @@ import matplotlib.pyplot as plt
 import csv
 from pathlib import PurePath
 
-ROOTPATH_TESTING = PurePath("GTSRB", "testing", "images")
-ROOTPATH_META = PurePath("GTSRB", "META")
-ROOTPATH_TRAINING = PurePath("GTSRB", "training", "images")
+ROOTPATH_TESTING = PurePath("../data/GTSRB", "testing", "images")
+ROOTPATH_META = PurePath("../data/GTSRB", "META")
+ROOTPATH_TRAINING = PurePath("../data/GTSRB", "training", "images")
 
 def readTrainingTrafficSigns(rootpath):
 
