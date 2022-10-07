@@ -7,20 +7,9 @@
   <a href="https://github.com/isabelleysseric/Traffic-sign-detector">Traffic-sign-detector</a> (GitHub)
   &nbsp; • &nbsp;<a href="https://github.com/isabelleysseric/Traffic-sign-detector/wiki">Traffic-sign-detector</a> (Wiki)<br/>
   <a href="https://github.com/isabelleysseric">isabelleysseric</a> (GitHub)
-  &nbsp; • &nbsp;[isabelleysseric](https://hub.docker.com/u/isabelleysseric) (Docker)
   &nbsp; • &nbsp;<a href="https://isabelleysseric.com/">isabelleysseric.com</a> (Portfolio)
   &nbsp; • &nbsp;<a href="https://www.linkedin.com/in/isabelle-eysseric/">isabelle-eysseric</a> (LinkedIn) <br/>
 </p>
-<br/>
-<br/>
-
-
-
-[Traffic-sign-detector](https://github.com/isabelleysseric/Traffic-sign-detector) (GitHub)
-&nbsp; • &nbsp;[Traffic-sign-detector](https://github.com/isabelleysseric/Traffic-sign-detector/wiki) (Wiki)
-&nbsp; • &nbsp;[isabelleysseric](https://hub.docker.com/u/isabelleysseric) (Docker)
-&nbsp; • &nbsp;[isabelleysseric.com](https://isabelleysseric.com) (Portfolio)
-&nbsp; • &nbsp;[isabelle-eysseric](https://www.linkedin.com/in/isabelle-eysseric/) (Linkedin)
 <br/>
 <br/>
 
