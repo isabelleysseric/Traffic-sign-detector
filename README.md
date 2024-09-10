@@ -3,14 +3,24 @@
 <br/>
 
 
-<p align='center'>
-  <a href="https://github.com/isabelleysseric/Traffic-sign-detector">Traffic-sign-detector</a> (GitHub)
-  &nbsp; • &nbsp;<a href="https://github.com/isabelleysseric/Traffic-sign-detector/wiki">Traffic-sign-detector</a> (Wiki)<br/>
-  <a href="https://github.com/isabelleysseric">isabelleysseric</a> (GitHub)
-  &nbsp; • &nbsp;<a href="https://isabelleysseric.com/">isabelleysseric.com</a> (Portfolio)
-  &nbsp; • &nbsp;<a href="https://www.linkedin.com/in/isabelleysseric/">isabelleysseric</a> (LinkedIn) <br/>
-</p>
-<br/>
+<h2 align="center">    
+
+  <!-- GitHub -->
+  <a href="https://github.com/isabelleysseric/">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" >
+  </a>  
+
+  <!-- Project Repo -->
+  <a href="https://github.com/isabelleysseric/Traffic-sign-detector/">
+    <img src="https://img.shields.io/badge/Repo-Traffic_sign_detector-green?style=for-the-badge&logo={Traffic-sign-detector}&logoColor=white" >
+  </a>
+
+  <!-- Wiki Project -->
+  <a href="https://github.com/isabelleysseric/Traffic-sign-detector/wiki/">
+    <img src="https://img.shields.io/badge/Wiki-Traffic_sign_detector-green?style=for-the-badge&logo={Traffic-sign-detector}&logoColor=white" >
+  </a><br>
+  
+</h2>
 <br/>
 
 
